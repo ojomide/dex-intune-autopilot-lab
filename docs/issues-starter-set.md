@@ -1,0 +1,11 @@
+# Starter Issues — create these on GitHub publish (one Issue each, in this order)
+Format follows `.github/ISSUE_TEMPLATE/deliverable.md`. Labels = the area.
+
+1. **Win32 app deployment** — Area: Packages & Artifacts · Outcome: one `.intunewin` app deployed to the test device with working detection rules · Proof: device-side app presence + Intune install status · Cost: $0 · Done when: app installs via Company Portal/policy with no manual step on the device
+2. **Policy-export habit for tenant config** — Area: Source Control & Config · Outcome: every new Intune policy exported/snapshotted into this repo the day it is created · Proof: an export file committed per policy · Done when: Win32 + config-profile work both land with exports
+3. **Configuration profiles set** — Area: Source & Config / Releases · Outcome: device configuration profiles (incl. update ring + BitLocker) created and assigned · Proof: device-side BitLocker/update state reading · Done when: profile verdict read on the device, not the portal
+4. **D3 break-and-remediate** — Area: CI & Testing (5-touch bar) · Outcome: deliberately break a compliance-relevant setting, detect it, remediate it · Proof: Lab Log entry with the Wall and the fix · Done when: break → detect → remediate all three timestamps recorded
+5. **Conditional Access report-only verdict** — Area: Security · Outcome: CA policy evaluated in report-only with a sign-in-log verdict · Proof: log excerpt filed in `docs/lab-log/` · Done when: verdict is written in one sentence with the log handle
+6. **EMS E3 recon (mid-November)** — Area: Reliability & Cost · Outcome: written comparison of what the Dec–Jan plan loses/gains on EMS E3 vs Business Premium · Proof: ADR-0005 superseding or confirming ADR-0004 · Done when: the Nov 29 gate decision is taken from this document
+7. **Redmi selective-wipe closure** — Area: Releases · Outcome: pending Outlook/Word wipe rows resolved; Gallery check confirms personal photos untouched · Proof: device-side Gallery + app state reading · Done when: both readings recorded in a Lab Log entry
+8. **GitHub publish** — Area: Source Control & Config · Outcome: this repo pushed to GitHub under the owner's account (username pending — owner's word) · Proof: public repo URL in the README · Done when: the URL resolves

@@ -1,0 +1,11 @@
+# Secrets — never commit tenant credentials, keys, or exports containing them
+*.pem
+*.pfx
+*.key
+.env
+*secret*
+*credential*
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.vscode/
